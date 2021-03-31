@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/jpg" href="./BIBassets/favicon.ico">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="heading">
+            Wonders
+        </div>
+        <div class="links">
+            <ul>
+                <li class="cur"><a href="">Home</a></li>
+                <li><a href="./explore.html">Explore</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="loader">
+        <img src="./BIBassets/loading.gif" alt="">
+    </div>
+    <div class="parallax">
+        <div class="text1">
+            <p>Lorem Ipsum is simply dummy text of typesetting industry.</p>
+            <div class="button2">
+                <button>Lorem Ipsum</button>
+                <button>Explore Now</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Gallery</h3>
+                <ul>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Picks</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Marketplace</h3>
+                <ul>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Best selling</a></li>
+                    <li><a href="#">Latest</a></li>
+                </ul>
+            </div>
+            <div class="footer-section form">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to get your weekly dose of news,updates,tips and special offers.</p>
+            <input type="email" placeholder="Enter your email address">
+            <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; Keshav Agarwal
+        </div>
+    </footer>
+    <script>
+        let loader = document.getElementsByClassName("loader")[0];
+        let parallax = document.getElementsByClassName("parallax")[0];
+        setTimeout(()=>{
+            loader.style.display = "none";
+            parallax.style.display = "block";
+        },2000);
+    </script>
+</body>
+</html>

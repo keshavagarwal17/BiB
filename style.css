@@ -1,0 +1,290 @@
+@media url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    
+  background-color:#0f121d;
+    overflow-x: hidden;
+}
+.container{
+    color:white;
+}
+.footer {
+  width: 100vw;
+  height: 350px;
+  position: relative;
+  background-color:#06090f;
+  color: white;
+  letter-spacing: 1.4px;
+}
+.footer-content {
+  height: 300px;
+  display: flex;
+  padding: 40px 60px 0 60px;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: 1px solid #84849d;
+}
+.footer-section {
+  width: 23%;
+}
+.footer-content .form {
+  width: 33%;
+}
+.footer-content .form p {
+  font-size: 14px;
+}
+.footer-section input {
+  margin-top: 15px;
+  border: 1px solid #84849d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.footer-section button {
+  padding: 12px 78px;
+  color: white;
+  font-size: 15px;
+  background-color: #5d7cc5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer-section li {
+  list-style: none;
+  padding-bottom: 7px;
+}
+.footer-section li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.footer-section li a:hover{
+    color: #27dabc;
+}
+.footer-section h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+  color: #84849d;
+}
+
+/* style for navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    color: white;
+    background-color: #161b22;
+}
+.links ul{
+    list-style-type: none;
+    display: flex;
+}
+.links ul li{
+    padding: 0 20px;
+    font-size: 18px;
+}
+.links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.links ul li.cur a{
+  color: #27dabc;
+}
+.links ul li a:hover{
+    color: #27dabc;
+}
+.heading{
+    font-size: 30px;
+}
+
+.parallax {
+  display: none;
+    /* The image used */
+    background-image: url('./BIBassets/img1.jpg');
+  
+    /* Full height */
+    height: 100%; 
+    position: relative;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* .parallax::before{
+    background-color: #1316218c;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  } */
+
+  .text1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+  }
+
+  .button2{
+      display: flex;
+      justify-content: space-between;
+  }
+  .button2 button{
+      padding: 10px;
+      cursor: pointer;
+      margin: 10px 30px;
+      outline: none;
+      border: 1px solid white;
+      font-size: 17px;
+      color: white;
+      transition: all 1s ease;
+  }
+  .button2 button:nth-child(1){
+      background-color: rgba(255, 140, 0, 0.808);
+  }
+  .button2 button:nth-child(2){
+      background-color: transparent;
+  }
+  .button2 button:nth-child(1):hover{
+    background-color:#141483;
+}
+.button2 button:nth-child(2):hover{
+    background-color: #3e3ef6
+}
+
+/* for explore page */
+.imgandtext{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #323232;
+    padding: 30px 20px;
+}
+.imgandtext img{
+    height: 250px;
+    width: 500px;
+    cursor: pointer;
+}
+.insideimg{
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+.text{
+    flex:1;
+    font-size: 18px;
+}
+.container h4{
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 25px;
+}
+.top-heading{
+  font-size: 40px;
+  font-style: italic;
+}
+.top-heading img{
+  height: 35px;
+}
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 1030px){
+    .imgandtext{
+      flex-direction: column;
+    }
+    .imgandtext img{
+      width: 80%;
+      margin: 35px;
+    }
+  }
+
+  /* about us page */
+  .aboutContainer{
+    background-image: url('./BIBassets/dotted.svg');
+  
+    /* Full height */
+    height: 60%; 
+    position: relative;
+    color: white;
+    margin-bottom: 50px;
+  }
+  .myimg{
+    height: 280px;
+    width: 280px;
+    border-radius: 100%;
+  }
+  .intro{
+    display: flex;
+    justify-content: space-around;
+  }
+  .social-links{
+    display: flex;
+    justify-content: space-around;
+  }
+  .social-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+  }
+  .social-links a:hover{
+    color: #89befc;
+  }
+  .introInfo{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .aboutContainer h3{
+    padding: 20px;
+  }
+  .aboutContainer .intro h3{
+    padding-left: 0;
+  }
+  .loader img{
+    height:300px;
+  }
+  .loader{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+  .aboutMeText{
+    font-size: 35px;
+  }
+  .aboutMeText img{
+    height: 30px;
+  }
+
+   /* 100% Image Width on Smaller Screens */
+   @media only screen and (max-width: 700px){
+    .intro{
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+    .aboutContainer{
+      height: 100%;
+    }
+  }
